@@ -241,7 +241,7 @@ Modify CSS variables in `style.css`:
 
 ### Copyright
 - **Content**: © 2026 Cartoleria Dudù
-- **Website**: © 2026 DWeb-code
+- **Website**: © 2026 Dwebcoding
 - **Code**: Open source (MIT License)
 
 ### Compliance
