@@ -60,11 +60,11 @@ Dudu Stationery/
 ├── prodotti.html           # Catalogo prodotti
 ├── servizi.html            # Servizi offerti
 ├── contatti.html           # Form contatti e info
-├── 📁 css/
+├── css/
 │   └── style.css           # Stylesheet principale (15KB)
-├── 📁 js/
+├── js/
 │   └── main.js             # JavaScript principale (12KB)
-├── 📁 icons/                  # Icone SVG personalizzate
+├── icons/                  # Icone SVG personalizzate
 │   ├── binding.svg
 │   ├── book.svg
 │   ├── business-card.svg
