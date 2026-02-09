@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* ============================================
    CARTOLERIA DUDÙ - STYLESHEET
    Design: Accogliente, colorato, moderno con tocchi artigianali
@@ -19,6 +19,21 @@
     --error: #C66B6B;
     --eco: #A3C9A8;              /* Verde chiaro */
     --eco-accent: #F9C784;       /* Giallo caldo */
+    /* Nuovi colori chiari e vivaci */
+    --blue-light: #A7C7E7;
+    --blue-bright: #6C63FF;
+    --pink-light: #FAD4D4;
+    --pink-bright: #DD2A7B;
+    --yellow-light: #FFF9C4;
+    --yellow-bright: #FFD600;
+    --green-light: #D4F5E9;
+    --green-bright: #25D366;
+    --purple-light: #E6D6F5;
+    --purple-bright: #8134AF;
+    --orange-light: #FFE5B4;
+    --orange-bright: #F58529;
+    --cyan-light: #D0F7FA;
+    --cyan-bright: #00BCD4;
     --font-main: 'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     --font-accent: 'Playfair Display', Georgia, serif;
     --transition: all 0.34s cubic-bezier(0.22, 1, 0.36, 1);
