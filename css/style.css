@@ -348,10 +348,11 @@ a:hover {
 }
 
 .btn-primary {
-    background: linear-gradient(90deg, var(--primary), color-mix(in srgb, var(--primary) 80%, var(--accent) 20%));
-    color: white;
+    background: linear-gradient(90deg, var(--primary), var(--blue-bright), var(--accent), var(--eco-accent));
+    color: #fff;
     box-shadow: 0 8px 20px rgba(59,124,89,0.12), inset 0 -6px 12px rgba(0,0,0,0.06);
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 2px solid var(--primary);
+    text-shadow: 0 1px 2px rgba(59,124,89,0.18);
 }
 
 .btn-primary:hover {
@@ -360,9 +361,10 @@ a:hover {
 }
 
 .btn-secondary {
-    background: transparent;
-    color: var(--primary);
-    border: 2px dashed rgba(59,124,89,0.14);
+    background: var(--yellow-light);
+    color: var(--dark);
+    border: 2px dashed var(--accent);
+    text-shadow: 0 1px 2px rgba(224,122,95,0.12);
 }
 
 .btn-secondary:hover {
@@ -669,19 +671,22 @@ section.alt-bg {
 .filter-btn {
     padding: 0.6rem 1.4rem;
     border: 2px solid var(--border);
-    background: var(--light);
+    background: var(--blue-light);
     border-radius: 25px;
     cursor: pointer;
     transition: var(--transition);
     font-weight: 500;
     color: var(--dark);
+    box-shadow: 0 2px 8px rgba(108,99,255,0.08);
+    text-shadow: 0 1px 2px rgba(108,99,255,0.10);
 }
 
 .filter-btn.active,
 .filter-btn:hover {
-    background: var(--primary);
-    color: white;
-    border-color: var(--primary);
+    background: var(--blue-bright);
+    color: #fff;
+    border-color: var(--blue-bright);
+    text-shadow: 0 2px 4px rgba(108,99,255,0.18);
 }
 
 /* ============= SEZIONE SERVIZI ============= */
