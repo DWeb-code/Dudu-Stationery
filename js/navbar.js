@@ -4,16 +4,7 @@ function createNavbar(currentPage) {
 <nav class="navbar bg-white shadow-lg border-b border-gray-200">
     <div class="navbar-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
         <a href="${currentPage === 'index' ? 'index.html' : '../index.html'}" class="logo flex items-center space-x-2 text-xl font-bold text-eco hover:text-accent transition-colors">
-            <div class="logo-icon custom-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z" fill="currentColor" opacity="0.8"/>
-                    <path d="M20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" fill="currentColor" opacity="0.9"/>
-                    <circle cx="5" cy="19" r="0.8" fill="rgba(255,255,255,0.6)"/>
-                    <circle cx="7" cy="17" r="0.6" fill="rgba(255,255,255,0.5)"/>
-                    <circle cx="9" cy="15" r="0.4" fill="rgba(255,255,255,0.4)"/>
-                    <path d="M14 10l3 3" stroke="rgba(255,255,255,0.3)" stroke-width="0.8" stroke-linecap="round"/>
-                </svg>
-            </div>
+            <img src="${currentPage === 'index' ? 'assets/images/logo/logo dudu.png' : '../assets/images/logo/logo dudu.png'}" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
             Dudù
         </a>
         <ul class="nav-menu flex gap-8 mx-auto">

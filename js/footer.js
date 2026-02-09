@@ -48,14 +48,26 @@ function createFooter(currentPage) {
 
 // Function to insert footer
 function insertFooter(currentPage) {
-    const footerHTML = createFooter(currentPage);
-    const footerPlaceholder = document.getElementById('footer-placeholder');
-    if (footerPlaceholder) {
-        footerPlaceholder.innerHTML = footerHTML;
-    } else {
-        // Fallback: insert at the end of body
-        const footerContainer = document.createElement('div');
-        footerContainer.innerHTML = footerHTML;
-        document.body.appendChild(footerContainer.firstElementChild);
-    }
+  const footerHTML = createFooter(currentPage);
+  const footerPlaceholder = document.getElementById('footer-placeholder');
+  if (footerPlaceholder) {
+    footerPlaceholder.innerHTML = footerHTML;
+    footerPlaceholder.style.width = '100vw';
+    footerPlaceholder.style.position = 'relative';
+    footerPlaceholder.style.left = '50%';
+    footerPlaceholder.style.right = '50%';
+    footerPlaceholder.style.marginLeft = '-50vw';
+    footerPlaceholder.style.marginRight = '-50vw';
+  } else {
+    // Fallback: insert at the end of body
+    const footerContainer = document.createElement('div');
+    footerContainer.innerHTML = footerHTML;
+    footerContainer.style.width = '100vw';
+    footerContainer.style.position = 'relative';
+    footerContainer.style.left = '50%';
+    footerContainer.style.right = '50%';
+    footerContainer.style.marginLeft = '-50vw';
+    footerContainer.style.marginRight = '-50vw';
+    document.body.appendChild(footerContainer.firstElementChild);
+  }
 }
