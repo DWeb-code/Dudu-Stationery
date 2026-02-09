@@ -19,7 +19,7 @@ function createNavbar(currentPage) {
         <ul class="nav-menu flex gap-8 mx-auto">
             <li class="nav-item ${currentPage === 'index' ? 'active' : ''}"><a href="${currentPage === 'index' ? 'index.html' : '../index.html'}" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a></li>
             <li class="nav-item ${currentPage === 'chi-siamo' ? 'active' : ''}"><a href="${currentPage === 'index' ? 'html/chi-siamo.html' : 'chi-siamo.html'}" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Chi Siamo</a></li>
-            <li class="nav-item ${currentPage === 'prodotti' ? 'active' : ''}"><a href="${currentPage === 'index' ? 'html/prodotti.html' : 'prodotti.html'}" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Prodotti</a></li>
+            <li class="nav-item ${currentPage === 'novita' ? 'active' : ''}"><a href="${currentPage === 'index' ? 'html/novita.html' : 'novita.html'}" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Novità</a></li>
             <li class="nav-item ${currentPage === 'servizi' ? 'active' : ''}"><a href="${currentPage === 'index' ? 'html/servizi.html' : 'servizi.html'}" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Servizi</a></li>
             <li class="nav-item ${currentPage === 'contatti' ? 'active' : ''}"><a href="${currentPage === 'index' ? 'html/contatti.html' : 'contatti.html'}" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Contatti</a></li>
         </ul>

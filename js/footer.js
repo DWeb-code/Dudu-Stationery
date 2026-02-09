@@ -17,7 +17,7 @@ function createFooter(currentPage) {
       <span class="footer-title text-eco text-lg font-bold mb-2">Navigazione</span>
       <a href="../index.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2L2 8h2v6h4v-4h2v4h4V8h2L8 2z" fill="#3B7C59"/></svg> Home</a>
       <a href="chi-siamo.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="7" stroke="#E07A5F" stroke-width="2"/><path d="M8 10c2 0 3-1.5 3-3S10 4 8 4 5 5.5 5 7s1 3 3 3z" fill="#E07A5F"/></svg> Chi Siamo</a>
-      <a href="prodotti.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="12" height="8" rx="2" fill="#6C63FF"/></svg> Prodotti</a>
+      <a href="novita.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="12" height="8" rx="2" fill="#6C63FF"/></svg> Novità</a>
       <a href="servizi.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2v12M2 8h12" stroke="#F9C784" stroke-width="2"/></svg> Servizi</a>
       <a href="contatti.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2h12v12H2V2z" stroke="#E07A5F" stroke-width="2"/></svg> Contatti</a>
     </div>

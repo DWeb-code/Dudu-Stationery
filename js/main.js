@@ -8,7 +8,7 @@ const translations = {
     it: {
         nav_home: 'Home',
         nav_about: 'Chi Siamo',
-        nav_products: 'Prodotti',
+        nav_products: 'Novità',
         nav_services: 'Servizi',
         nav_contacts: 'Contatti',
         form_name_error: 'Il nome è obbligatorio',
