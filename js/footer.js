@@ -102,21 +102,26 @@ function createFooter(currentPage) {
         </svg> Cookie Policy
       </a>
     </div>
-    <!-- Social cartoon -->
+    <!-- Social ufficiali -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Seguici</span>
       <div class="flex gap-4 mt-2">
         <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;">
-            <circle cx="12" cy="12" r="10" fill="#1877F2"/>
-            <rect x="10" y="7" width="4" height="10" rx="2" fill="#fff"/>
+            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.019 4.388 10.995 10.125 11.854v-8.385H7.078V12.073h3.047V9.414c0-3.019 1.792-4.688 4.533-4.688 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.491 0-1.953.926-1.953 1.875v2.284h3.328l-.532 3.469h-2.796v8.385C19.612 23.068 24 18.092 24 12.073z" fill="#1877F2"/>
+            <path d="M16.671 15.542l.532-3.469h-3.328v-2.284c0-.949.462-1.875 1.953-1.875h1.513V5.961s-1.374-.235-2.686-.235c-2.741 0-4.533 1.669-4.533 4.688v2.659H7.078v3.469h3.047v8.385A12.073 12.073 0 0 0 12 24c6.627 0 12-5.405 12-11.927z" fill="#fff"/>
           </svg>
         </a>
         <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;">
-            <circle cx="12" cy="12" r="10" fill="#DD2A7B"/>
+            <radialGradient id="insta-gradient" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f9c784"/>
+              <stop offset="50%" stop-color="#dd2a7b"/>
+              <stop offset="100%" stop-color="#6c63ff"/>
+            </radialGradient>
+            <rect x="2" y="2" width="20" height="20" rx="6" fill="url(#insta-gradient)"/>
             <circle cx="12" cy="12" r="6" fill="#fff"/>
-            <circle cx="17" cy="7" r="2" fill="#DD2A7B"/>
+            <circle cx="17" cy="7" r="1.5" fill="#dd2a7b"/>
           </svg>
         </a>
         <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent">
