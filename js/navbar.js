@@ -9,7 +9,7 @@ function createNavbar(currentPage) {
             <img src="assets/images/logo/logo dudu.png" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
             Dudù
         </a>
-        <button class="hamburger block md:hidden focus:outline-none" id="navbar-hamburger" aria-label="Apri menu">
+        <button class="hamburger block focus:outline-none" id="navbar-hamburger" aria-label="Apri menu">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
@@ -43,7 +43,7 @@ function createNavbar(currentPage) {
             <img src="../assets/images/logo/logo dudu.png" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
             Dudù
         </a>
-        <button class="hamburger block md:hidden focus:outline-none" id="navbar-hamburger" aria-label="Apri menu">
+        <button class="hamburger block focus:outline-none" id="navbar-hamburger" aria-label="Apri menu">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
