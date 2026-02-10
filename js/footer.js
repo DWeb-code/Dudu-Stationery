@@ -1,10 +1,16 @@
 // Footer component
 
 function getAssetBasePath() {
-  // Gestione compatibile con GitHub Pages (sottocartella)
-  // Ottieni la base del repository (es: /Dudu-stationery/)
-  var repoBase = '/Dudu-stationery/';
-  // Se la pagina è già in /Dudu-stationery o sottocartelle, usa sempre il prefisso assoluto
+  // Rende il path compatibile sia in locale che su GitHub Pages
+  // Esempio: su GitHub Pages window.location.pathname = /Dudu-stationery/html/chi-siamo.html
+  // In locale: /html/chi-siamo.html oppure /index.html
+  var path = window.location.pathname;
+  // Trova la sottocartella del repo (es: /Dudu-stationery/)
+  var match = path.match(/^\/(.+?)\//);
+  var repoBase = '';
+  if (match && match[1] !== 'html' && match[1] !== 'assets' && match[1] !== 'css' && match[1] !== 'js') {
+    repoBase = '/' + match[1] + '/';
+  }
   return repoBase;
 }
 
