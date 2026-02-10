@@ -1,5 +1,6 @@
 // Footer component
 function createFooter(currentPage) {
+  const footerHTML = `
 <footer class="footer bg-secondary text-dark py-14 mt-16">
   <div class="footer-container max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-10 border-b border-light-gray pb-10">
     <!-- Contatti cartoon -->
@@ -7,6 +8,7 @@ function createFooter(currentPage) {
       <span class="footer-title text-eco text-lg font-bold mb-2">Contatti</span>
       <span class="text-xs flex items-center">
         <img src="${currentPage === 'index' ? 'assets/images/icons/info.png' : '../assets/images/icons/info.png'}" alt="Info" width="22" height="22" style="margin-right:8px;" /> Negozio
+      </span>
       <span class="text-xs flex items-center">
         <img src="${currentPage === 'index' ? 'assets/images/icons/timetable.png' : '../assets/images/icons/timetable.png'}" alt="Orari" width="22" height="22" style="margin-right:8px;" /> Orari
       </span>
@@ -136,9 +138,9 @@ function createFooter(currentPage) {
   <div class="footer-copyright text-center text-xs text-dark mt-8">
     © 2026 Cartoleria Dudù. Tutti i diritti riservati.
   </div>
-</footer>
-    `;
-    return footerHTML;
+  </footer>
+  `;
+  return footerHTML;
 }
 
 // Function to insert footer
