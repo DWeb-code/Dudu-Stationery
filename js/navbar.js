@@ -95,4 +95,17 @@ function insertNavbar(currentPage) {
             menu.classList.toggle('hidden');
         });
     }
+
+    // Controllo visibilità navbar su desktop
+    function checkNavbarVisibility() {
+        if (menu) {
+            if (window.innerWidth >= 768) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+    }
+    window.addEventListener('resize', checkNavbarVisibility);
+    checkNavbarVisibility();
 }
