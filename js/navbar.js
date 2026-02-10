@@ -90,9 +90,27 @@ function insertNavbar(currentPage) {
     // Hamburger menu toggle
     const hamburger = document.getElementById('navbar-hamburger');
     const menu = document.getElementById('navbar-menu');
+
+    // DEBUG: verifica hamburger
+    if (hamburger) {
+        console.log('[DEBUG] Hamburger trovato:', hamburger);
+        console.log('[DEBUG] Hamburger display:', window.getComputedStyle(hamburger).display);
+        console.log('[DEBUG] Hamburger classi:', hamburger.className);
+    } else {
+        console.warn('[DEBUG] Hamburger NON trovato');
+    }
+
+    if (menu) {
+        console.log('[DEBUG] Menu trovato:', menu);
+        console.log('[DEBUG] Menu classi:', menu.className);
+    } else {
+        console.warn('[DEBUG] Menu NON trovato');
+    }
+
     if (hamburger && menu) {
         hamburger.addEventListener('click', function () {
             menu.classList.toggle('hidden');
+            console.log('[DEBUG] Toggle menu hidden:', menu.classList.contains('hidden'));
         });
     }
 
