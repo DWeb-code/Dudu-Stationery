@@ -194,11 +194,23 @@ a:hover {
 }
 
 /* Hamburger Menu */
+
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+}
+
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block !important;
+    }
+}
+@media (min-width: 1025px) {
+    .hamburger {
+        display: none !important;
+    }
 }
 
 @media (max-width: 1024px) {
