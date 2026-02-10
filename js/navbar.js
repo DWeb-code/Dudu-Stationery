@@ -1,8 +1,6 @@
 // Navbar component
 function createNavbar(currentPage) {
     let navbarHTML = '';
-    if (currentPage === 'index') {
-        navbarHTML = `
 <nav class="navbar bg-white shadow-lg border-b border-gray-200">
     <div class="navbar-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
         <a href="index.html" class="logo flex items-center space-x-2 text-xl font-bold text-eco hover:text-accent transition-colors">
@@ -35,8 +33,6 @@ function createNavbar(currentPage) {
     </div>
 </nav>
         `;
-    } else {
-        navbarHTML = `
 <nav class="navbar bg-white shadow-lg border-b border-gray-200">
     <div class="navbar-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
         <a href="../index.html" class="logo flex items-center space-x-2 text-xl font-bold text-eco hover:text-accent transition-colors">
@@ -69,7 +65,40 @@ function createNavbar(currentPage) {
     </div>
 </nav>
         `;
-    }
+    // Navbar statica senza Tailwind
+    navbarHTML = `
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo/logo dudu.png" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
+            Dudù
+        </a>
+        <button class="hamburger" id="navbar-hamburger" aria-label="Apri menu">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <ul class="nav-menu" id="navbar-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="html/chi-siamo.html">Chi Siamo</a></li>
+            <li class="nav-item"><a href="html/novita.html">Novità</a></li>
+            <li class="nav-item"><a href="html/servizi.html">Servizi</a></li>
+            <li class="nav-item"><a href="html/contatti.html">Contatti</a></li>
+        </ul>
+        <div class="navbar-social">
+            <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank">
+                <img src="assets/images/social/facebook.png" alt="Facebook" width="24" height="24" />
+            </a>
+            <a href="https://www.instagram.com/cartoleriadudu/" target="_blank">
+                <img src="assets/images/social/instagram.png" alt="Instagram" width="24" height="24" />
+            </a>
+            <a href="https://wa.me/393317393337" target="_blank">
+                <img src="assets/images/social/whatsapp.png" alt="Whatsapp" width="24" height="24" />
+            </a>
+        </div>
+    </div>
+</nav>
+    `;
 
     return navbarHTML;
 }
