@@ -76,6 +76,11 @@ function createNavbar(currentPage) {
 
 // Function to insert navbar
 function insertNavbar(currentPage) {
+        // Rimuovi la classe md:hidden dall'hamburger se presente (workaround cache/CDN)
+        if (hamburger && hamburger.classList.contains('md:hidden')) {
+            hamburger.classList.remove('md:hidden');
+            console.log('[DEBUG] md:hidden rimossa da hamburger');
+        }
     const navbarHTML = createNavbar(currentPage);
     const navbarPlaceholder = document.getElementById('navbar-placeholder');
     if (navbarPlaceholder) {
